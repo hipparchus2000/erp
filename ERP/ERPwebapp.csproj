@@ -347,10 +347,6 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ERPdto\ERPdto.csproj">
-      <Project>{5B30EA7E-09AA-4A0C-BA0F-AD5C26286B8F}</Project>
-      <Name>ERPdto</Name>
-    </ProjectReference>
     <ProjectReference Include="..\ERPIServices\ERPIServices.csproj">
       <Project>{e9478847-9d5f-4eed-9601-cf300020717f}</Project>
       <Name>ERPIServices</Name>

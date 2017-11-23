@@ -24,5 +24,15 @@ namespace ERPServiceLayer.Services
         {
             throw new NotImplementedException();
         }
+
+        public void Put(Guid id, SalesOrderDto value)
+        {
+            throw new NotImplementedException();
+        }
+
+        SalesOrderDto[] ISalesOrderRepo.Get()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

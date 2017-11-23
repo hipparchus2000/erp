@@ -15,6 +15,11 @@ namespace ERPServiceLayer.Services
     {
         ISalesOrderRepo _repo;
         
+        public SalesOrderService(ISalesOrderRepo repo)
+        {
+            _repo = repo;
+        }
+
         public SalesOrderModel Get(Guid id)
         {
             var dto = _repo.Get(id);
@@ -51,6 +56,10 @@ namespace ERPServiceLayer.Services
             //todo add list get 
             throw new NotImplementedException();
         }
-        
+
+        public void Put(Guid id, SalesOrderModel value)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

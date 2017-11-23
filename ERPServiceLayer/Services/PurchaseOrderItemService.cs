@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ERPmodels.models;
 
 namespace ERPServiceLayer.Services
 {
@@ -11,27 +12,32 @@ namespace ERPServiceLayer.Services
     {
         IPurchaseOrderItemRepo _repo;
 
-        public IEnumerable<string> Get()
+        public PurchaseOrderItemService(IPurchaseOrderItemRepo repo)
+        {
+            _repo = repo;
+        }
+
+        PurchaseOrderItemModel[] IPurchaseOrderItemService.Get()
         {
             throw new NotImplementedException();
         }
 
-        public string Get(int v)
+        public PurchaseOrderItemModel Get(Guid id)
         {
             throw new NotImplementedException();
         }
 
-        public void Post(string v)
+        public void Post(PurchaseOrderItemModel value)
         {
             throw new NotImplementedException();
         }
 
-        public void Put(int v1, string v2)
+        public void Put(Guid id, PurchaseOrderItemModel value)
         {
             throw new NotImplementedException();
         }
 
-        public void Delete(int v)
+        public void Delete(Guid id)
         {
             throw new NotImplementedException();
         }

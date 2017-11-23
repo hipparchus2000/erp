@@ -10,5 +10,9 @@ namespace ERPIServices.Interfaces
     public interface ISalesOrderService
     {
         SalesOrderModel[] Get();
+        SalesOrderModel Get(Guid id);
+        void Post(SalesOrderModel value);
+        void Put(Guid id, SalesOrderModel value);
+        void Delete(Guid id);
     }
 }

@@ -11,7 +11,13 @@ namespace ERPServiceLayer.Services
     public class SalesOrderItemService : ISalesOrderItemService
     {
         ISalesOrderItemRepo _repo;
-        
+
+        public SalesOrderItemService(ISalesOrderItemRepo repo)
+        {
+            _repo = repo;
+        }
+
+
         SalesOrderItemModel[] ISalesOrderItemService.Get()
         {
             throw new NotImplementedException();
